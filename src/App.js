@@ -3,9 +3,9 @@ import MyRoustes from './MyRoustes';
 
 function App() {
   return (
-    <div className="App">
+    <>
      <MyRoustes/>
-    </div>
+    </>
   );
 }
 

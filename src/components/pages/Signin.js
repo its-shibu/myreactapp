@@ -10,9 +10,10 @@ const Signin = () => {
 
             <main className="form-signin w-50 mx-auto my-5 shadow-lg p-5">
                 <form>
-                    <img className="mb-4" src="https://static-00.iconduck.com/assets.00/react-icon-2048x2048-o8k3ymqa.png" alt="" width="72" height="57" />
-                    <h1 className="h3 mb-3 fw-normal">Sign In</h1>
-
+                    <div className="text-center">
+                        <img className="mb-4" src="https://static-00.iconduck.com/assets.00/react-icon-2048x2048-o8k3ymqa.png" alt="" width="72" height="57" />
+                        <h1 className="h3 mb-3 fw-normal">Sign In</h1>
+                    </div>
                     <div className="form-floating mb-3">
                         <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
                         <label for="floatingInput">Email address</label>
