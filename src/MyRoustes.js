@@ -8,6 +8,10 @@ import Navbar from './components/layouts/Navbar'
 import Signin from './components/pages/Signin'
 import Signup from './components/pages/Signup'
 import Cart from './components/pages/Cart'
+import Product from './components/pages/Product'
+import Productspage from './components/pages/Productspage'
+
+
 const MyRoustes = () => {
   return (
     <>
@@ -20,6 +24,7 @@ const MyRoustes = () => {
          <Route path = '/signin' element = {<Signin/>}/>
          <Route path = '/signup' element = {<Signup/>}/>
          <Route path='/cart' element={<Cart/>}/>
+         <Route path='/products' element={<Productspage/>}/>
         </Routes>
       </Router>
     </>
