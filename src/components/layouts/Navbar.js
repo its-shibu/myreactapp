@@ -17,7 +17,7 @@ const Navbar = () => {
                         </form>
                     </div>
                     <div className='col-md-3 d-flex justify-content-evenly'>
-                        <Link to='/signin'><i class='bi bi-box-arrow-in-right fs-3 fw-bold text-white'></i></Link>
+                         <Link to='/signin'><i class='bi bi-box-arrow-in-right fs-3 fw-bold text-white'></i></Link>
                         <Link to='/signup'><i class="bi bi-person-plus fs-3 fw-bold text-white"></i></Link>
                         <Link to='/cart'><i class="bi bi-cart-plus fs-3 fw-bold text-white"></i></Link>
                     </div>
@@ -28,19 +28,19 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                               <Link className="nav-link active" aria-current="page" to="#">Home</Link>
+                               <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                               <Link className="nav-link" to="#">Links</Link>
+                               <Link className="nav-link" to="/products">Products</Link>
                             </li>
                             <li className="nav-item">
-                               <Link className="nav-link" to="#">Services</Link>
+                               <Link className="nav-link" to="/services">Services</Link>
                             </li>
                             <li className="nav-item">
                                <Link className="nav-link" to="#">Blog</Link>
                             </li>
                             <li className="nav-item">
-                               <Link className="nav-link" to="#">Contact Us</Link>
+                               <Link className="nav-link" to="#">Contact</Link>
                             </li>
                         </ul>
                     </div>

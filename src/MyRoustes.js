@@ -10,6 +10,7 @@ import Signup from './components/pages/Signup'
 import Cart from './components/pages/Cart'
 import Product from './components/pages/Product'
 import Productspage from './components/pages/Productspage'
+import Services from './components/pages/Services'
 
 
 const MyRoustes = () => {
@@ -25,6 +26,7 @@ const MyRoustes = () => {
          <Route path = '/signup' element = {<Signup/>}/>
          <Route path='/cart' element={<Cart/>}/>
          <Route path='/products' element={<Productspage/>}/>
+         <Route path='/services' element={<Services/>}/>  
         </Routes>
       </Router>
     </>

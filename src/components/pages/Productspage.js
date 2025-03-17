@@ -1,8 +1,12 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar'
-import Footer from '../layouts/Footer'
-import Product from './Product'
-import { Typography, Container, FormControlLabel, Checkbox, Box, Radio, RadioGroup, Link } from '@mui/material'
+import React from 'react';
+import Navbar from '../layouts/Navbar';
+import Footer from '../layouts/Footer';
+import Product from './Product';
+import { Typography, Container, FormControlLabel, Checkbox, Box, Radio, RadioGroup, Link, Rating } from '@mui/material';
+import StarIcon from '@mui/icons-material/Star';
+
+
+
 
 
 
@@ -63,15 +67,21 @@ const Productspage = () => {
 
               <Link component="button" variant="h5" color='success'>
                 Delas of the day
-              </Link> 
+              </Link>
               <br />
               <Link component="button" variant="h5" color='warning'>
                 Flash Delas
               </Link>
-              <br/> 
+              <br />
               <Link component="button" variant="h5" color='info'>
                 Most Popular
               </Link>
+
+              <Typography variant='h4' color='secondary' pl={5} pt={5}>Reviews</Typography>
+
+              <br />
+              <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
+
 
 
             </div>
