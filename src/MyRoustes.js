@@ -11,6 +11,8 @@ import Cart from './components/pages/Cart'
 import Product from './components/pages/Product'
 import Productspage from './components/pages/Productspage'
 import Services from './components/pages/Services'
+import Blogs from './components/pages/Blogs'
+import Contact from './components/pages/Contact'
 
 
 const MyRoustes = () => {
@@ -26,7 +28,9 @@ const MyRoustes = () => {
          <Route path = '/signup' element = {<Signup/>}/>
          <Route path='/cart' element={<Cart/>}/>
          <Route path='/products' element={<Productspage/>}/>
-         <Route path='/services' element={<Services/>}/>  
+         <Route path='/services' element={<Services/>}/>
+         <Route path='/blogs' element= {<Blogs/>}/>  
+         <Route path ='/contact' element={<Contact/>}/> 
         </Routes>
       </Router>
     </>
