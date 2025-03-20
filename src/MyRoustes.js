@@ -13,6 +13,8 @@ import Productspage from './components/pages/Productspage'
 import Services from './components/pages/Services'
 import Blogs from './components/pages/Blogs'
 import Contact from './components/pages/Contact'
+import UseStateHooks from './Hooks/UseStateHooks'
+
 
 
 const MyRoustes = () => {
@@ -31,6 +33,7 @@ const MyRoustes = () => {
          <Route path='/services' element={<Services/>}/>
          <Route path='/blogs' element= {<Blogs/>}/>  
          <Route path ='/contact' element={<Contact/>}/> 
+         <Route path='/usestatehooks' element = {<UseStateHooks/>}/>
         </Routes>
       </Router>
     </>
