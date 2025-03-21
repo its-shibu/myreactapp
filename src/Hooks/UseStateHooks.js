@@ -24,15 +24,9 @@ const useStateHooks = () => {
 
     }
 
-
-
-
-
     useEffect(() => {
-        window.alert('value is updated')
+        window.alert('value updated')
     }, [count])
-
-
 
 
 
@@ -43,10 +37,9 @@ const useStateHooks = () => {
             <button className='btn btn-danger' onClick={() => setCount(count - 1)}>decrement</button> &nbsp;
             <button className='btn btn-warning' onClick={reset}>reset</button>
 
-
-
-            <h1>{data}</h1>
-            <button className='btn btn-outline-primary' onClick={data}> INCREASE </button>
+            <h1>{count}</h1>
+            <button className='btn btn-outline-primary' onClick={count}> INCREASE </button> &nbsp;
+            <button className='btn btn-outline-info' onClick={()=>(count + 10)}> INCREASE by TEN</button>
         </div>
         </>
     )
