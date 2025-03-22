@@ -15,6 +15,7 @@ import Blogs from './components/pages/Blogs'
 import Contact from './components/pages/Contact'
 import UseStateHooks from './Hooks/UseStateHooks'
 import FetchData from './Hooks/FetchData'
+import Display from './components/pages/Display'
 
 
 
@@ -36,6 +37,7 @@ const MyRoustes = () => {
          <Route path ='/contact' element={<Contact/>}/> 
          <Route path='/usestatehooks' element = {<UseStateHooks/>}/>
          <Route path='/axiosfetch' element = {<FetchData/>}/>
+         <Route path='/info' element={<Display/>}/>
          </Routes>
       </Router>
     </>
