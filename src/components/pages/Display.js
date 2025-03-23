@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import axios from 'axios'
 import Info from './Info'
+import { GlobalContext } from '../../Hooks/GlobalContext'
+
 
 const Display = () => {
 
@@ -16,8 +18,16 @@ const Display = () => {
     }, [])
 
 
+    //gobal context variable
+    const value = useContext(GlobalContext)
+
+
+
     return (
         <>
+
+        <h1>{value}</h1>
+
         {posts.map((item, i)=>{
            return <Info props = {item}/>
         }) }
